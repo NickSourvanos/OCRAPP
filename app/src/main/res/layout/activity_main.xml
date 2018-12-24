@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/mapsButton"
+        android:layout_width="123dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="22dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="339dp"
+        android:text="MAPS"
+        app:layout_constraintBottom_toTopOf="@+id/googleSearchButton"
+        app:layout_constraintEnd_toStartOf="@+id/editTextButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/googleSearchButton"
+        android:layout_width="123dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="22dp"
+        android:text="GOOGLE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/messagesButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mapsButton" />
+
+    <Button
+        android:id="@+id/messagesButton"
+        android:layout_width="123dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="22dp"
+        android:text="MESSAGE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/googleSearchButton"
+        app:layout_constraintTop_toBottomOf="@+id/editTextButton" />
+
+    <Button
+        android:id="@+id/editTextButton"
+        android:layout_width="123dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="22dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="339dp"
+        android:text="Edit"
+        app:layout_constraintBottom_toTopOf="@+id/messagesButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mapsButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
